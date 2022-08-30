@@ -8,7 +8,34 @@ function User(props){
       <p>{props.user.name} / {props.user.age}</p>
     </div>
   );
-  
+
+}
+
+function UserList(props){
+
+  const users = [
+    <User key={1} user={
+      {
+        name: "Julia",
+        age: 25,
+        picture: "pictures/julia.png"
+      }
+    } />,
+    <User key={2} user={
+      {
+        name: "Maria",
+        age: 30,
+        picture: "pictures/julia.png"
+      }
+    } />
+  ];
+
+  return(
+    <div>
+      {users}
+    </div>
+  );
+
 }
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -20,5 +47,6 @@ const user = {
 }
 
 root.render(
-  <User user={user} />
+  //<User user={user} />
+  <UserList />
 );
