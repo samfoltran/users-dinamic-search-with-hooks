@@ -8,7 +8,7 @@ function App(props){
     const [filter, setFilter] = useState('');
 
     return(
-        <div>
+        <div id='app'>
             <SearchForm setFilter={setFilter} />
             <UserList filter={filter} />
         </div>
