@@ -3,9 +3,11 @@ import User from './User.js';
 import users_database from './users.json';
 
 function UserList(props){
-    console.log(props.filter);
+
     const users = users_database.map((user) => {
-        return <User key={user.key} user={user} />
+        if(user.name.toLowerCase().match(props.filter)){
+            return <User key={user.key} user={user} />
+        }
     });
     
     return(

@@ -2,7 +2,8 @@ function SearchForm(props){
 
     function handleChange(){
         const searchString = document.getElementById('searchForm').value;
-        console.log(searchString);
+        
+        props.setFilter(searchString);
     }
 
     return(

@@ -5,10 +5,12 @@ import SearchForm from './SearchForm.js';
 
 function App(props){
 
+    const [filter, setFilter] = useState('');
+
     return(
         <div>
-            <SearchForm />
-            <UserList filter={'teste'} />
+            <SearchForm setFilter={setFilter} />
+            <UserList filter={filter} />
         </div>
     );
 
