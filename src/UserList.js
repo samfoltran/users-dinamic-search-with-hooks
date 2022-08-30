@@ -1,28 +1,17 @@
 import User from './User.js';
 
+import users_database from './users.json';
+
 function UserList(props){
 
-    const users = [
-        <User key={1} user={
-            {
-                name: "Julia",
-                age: 25,
-                picture: "pictures/julia.png"
-            }
-        } />,
-        <User key={2} user={
-            {
-                name: "Maria",
-                age: 35,
-                picture: "pictures/maria.png"
-            }
-        } />
-    ];
-  
+    const users = users_database.map((user) => {
+        return <User key={user.key} user={user} />
+    });
+    
     return(
-      <div>
-        {users}
-      </div>
+        <div>
+            {users}
+        </div>
     );
   
 } export default UserList;

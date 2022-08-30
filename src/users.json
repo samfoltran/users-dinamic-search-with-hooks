@@ -1,0 +1,39 @@
+[
+    {
+        "key": 1,
+        "name": "Jackson",
+        "age": 30,
+        "picture": "pictures/jackson.png"
+    },
+    {
+        "key": 2,
+        "name": "Jose",
+        "age": 35,
+        "picture": "pictures/jose.png"
+    },
+    {
+        "key": 3,
+        "name": "Theo",
+        "age": 28,
+        "picture": "pictures/theo.png"
+    },
+
+    {
+        "key": 4,
+        "name": "Julia",
+        "age": 25,
+        "picture": "pictures/julia.png"
+    },
+    {
+        "key": 5,
+        "name": "Maria",
+        "age": 32,
+        "picture": "pictures/maria.png"
+    },
+    {
+        "key": 6,
+        "name": "Rebeca",
+        "age": 38,
+        "picture": "pictures/rebeca.png"
+    }
+]
